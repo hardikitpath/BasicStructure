@@ -6,27 +6,27 @@
 //  Copyright © 2018 Technobrave Pty Ltd. All rights reserved.
 //
 
-//import AlamofireImage
 import UIKit
+import AlamofireImage
 
-//public extension UIImageView {
-//
-//    func setImage(with string: String?, placeholderImage: UIImage?, completion: (() -> ())? = nil) {
-//        guard let validString = string, let url = URL(string: validString) else {
-//            self.image = placeholderImage
-//            return
-//        }
-//        self.af.setImage(withURL: url, placeholderImage: placeholderImage) { result in
-//            completion?()
-//        }
-//    }
-//
-//    func cancleRequest() {
-//        self.af.cancelImageRequest()
-//    }
-//
-//    func applyShadow() {
-//
-//    }
-//
-//}
+extension UIImageView {
+
+    func setImage(with string: String?, placeholderImage: UIImage?, completion: (() -> ())? = nil) {
+        guard let validString = string, let url = URL(string: validString) else {
+            self.image = placeholderImage
+            return
+        }
+        self.af.setImage(withURL: url, placeholderImage: placeholderImage, completion:  { result in
+            completion?()
+        })
+    }
+
+    func cancleRequest() {
+        self.af.cancelImageRequest()
+    }
+
+    func applyShadow() {
+
+    }
+
+}
