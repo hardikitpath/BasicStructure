@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5306307527D1E0700059F0CD /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5306307427D1E0700059F0CD /* AppConstants.swift */; };
 		934856CA27B280D600C116E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856C927B280D600C116E4 /* AppDelegate.swift */; };
 		934856CC27B280D600C116E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CB27B280D600C116E4 /* SceneDelegate.swift */; };
 		934856CE27B280D600C116E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CD27B280D600C116E4 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5306307427D1E0700059F0CD /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = ../../../../AppConstants.swift; sourceTree = "<group>"; };
 		934856C627B280D600C116E4 /* ProjectStructureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectStructureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934856C927B280D600C116E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		934856CB27B280D600C116E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			children = (
 				934856EA27B2824D00C116E4 /* ResuseableView.swift */,
 				9348570327B2865500C116E4 /* AppConstant.swift */,
+				5306307427D1E0700059F0CD /* AppConstants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				934856F927B2824D00C116E4 /* WebServiceManager.swift in Sources */,
 				9348570027B2824D00C116E4 /* WebResource.swift in Sources */,
 				934856FC27B2824D00C116E4 /* Result.swift in Sources */,
+				5306307527D1E0700059F0CD /* AppConstants.swift in Sources */,
 				934856F827B2824D00C116E4 /* Codable+Extension.swift in Sources */,
 				9348570127B2824D00C116E4 /* Helper.swift in Sources */,
 				934856FA27B2824D00C116E4 /* ResuseableView.swift in Sources */,
