@@ -9,5 +9,5 @@
 import Foundation
 
 struct AppConfig {
-    static let host: URLHost = .live
+    static let host: URLHost = .developement
 }

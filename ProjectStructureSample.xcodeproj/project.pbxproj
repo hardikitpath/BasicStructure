@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5306307527D1E0700059F0CD /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5306307427D1E0700059F0CD /* AppConstants.swift */; };
+		5380DA2027DB742700D346F6 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380DA1F27DB742700D346F6 /* Employee.swift */; };
+		5380DA2327DB756300D346F6 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380DA2127DB756300D346F6 /* EmployeeCell.swift */; };
+		5380DA2427DB756300D346F6 /* EmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5380DA2227DB756300D346F6 /* EmployeeCell.xib */; };
 		934856CA27B280D600C116E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856C927B280D600C116E4 /* AppDelegate.swift */; };
 		934856CC27B280D600C116E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CB27B280D600C116E4 /* SceneDelegate.swift */; };
 		934856CE27B280D600C116E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CD27B280D600C116E4 /* ViewController.swift */; };
@@ -31,14 +34,15 @@
 		9348570127B2824D00C116E4 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856F127B2824D00C116E4 /* Helper.swift */; };
 		9348570227B2824D00C116E4 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856F227B2824D00C116E4 /* AppConfig.swift */; };
 		9348570427B2865500C116E4 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348570327B2865500C116E4 /* AppConstant.swift */; };
-		9348570827B2875900C116E4 /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348570627B2875900C116E4 /* DemoCell.swift */; };
-		9348570927B2875900C116E4 /* DemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9348570727B2875900C116E4 /* DemoCell.xib */; };
 		9348570C27B2896200C116E4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9348570B27B2896200C116E4 /* User.swift */; };
 		9348571027B28B8E00C116E4 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9348570F27B28B8E00C116E4 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5306307427D1E0700059F0CD /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppConstants.swift; path = ../../../../AppConstants.swift; sourceTree = "<group>"; };
+		5380DA1F27DB742700D346F6 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		5380DA2127DB756300D346F6 /* EmployeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		5380DA2227DB756300D346F6 /* EmployeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeCell.xib; sourceTree = "<group>"; };
 		934856C627B280D600C116E4 /* ProjectStructureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectStructureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934856C927B280D600C116E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		934856CB27B280D600C116E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +68,6 @@
 		934856F127B2824D00C116E4 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		934856F227B2824D00C116E4 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		9348570327B2865500C116E4 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
-		9348570627B2875900C116E4 /* DemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
-		9348570727B2875900C116E4 /* DemoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoCell.xib; sourceTree = "<group>"; };
 		9348570B27B2896200C116E4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,8 +192,8 @@
 		9348570A27B2876300C116E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9348570627B2875900C116E4 /* DemoCell.swift */,
-				9348570727B2875900C116E4 /* DemoCell.xib */,
+				5380DA2127DB756300D346F6 /* EmployeeCell.swift */,
+				5380DA2227DB756300D346F6 /* EmployeeCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				9348570B27B2896200C116E4 /* User.swift */,
+				5380DA1F27DB742700D346F6 /* Employee.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -269,8 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				934856D627B280DC00C116E4 /* LaunchScreen.storyboard in Resources */,
+				5380DA2427DB756300D346F6 /* EmployeeCell.xib in Resources */,
 				934856D327B280DC00C116E4 /* Assets.xcassets in Resources */,
-				9348570927B2875900C116E4 /* DemoCell.xib in Resources */,
 				934856D127B280D600C116E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				934856FE27B2824D00C116E4 /* MediaType.swift in Sources */,
+				5380DA2027DB742700D346F6 /* Employee.swift in Sources */,
 				934856F927B2824D00C116E4 /* WebServiceManager.swift in Sources */,
 				9348570027B2824D00C116E4 /* WebResource.swift in Sources */,
 				934856FC27B2824D00C116E4 /* Result.swift in Sources */,
@@ -302,9 +306,9 @@
 				934856CA27B280D600C116E4 /* AppDelegate.swift in Sources */,
 				934856FB27B2824D00C116E4 /* AppError.swift in Sources */,
 				934856F327B2824D00C116E4 /* UIView+Extension.swift in Sources */,
+				5380DA2327DB756300D346F6 /* EmployeeCell.swift in Sources */,
 				934856F527B2824D00C116E4 /* String+Extension.swift in Sources */,
 				934856CC27B280D600C116E4 /* SceneDelegate.swift in Sources */,
-				9348570827B2875900C116E4 /* DemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

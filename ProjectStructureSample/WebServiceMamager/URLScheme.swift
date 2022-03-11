@@ -8,6 +8,8 @@
 
 import Foundation
 
+//http://dummy.restapiexample.com/api/v1/create
+
 public enum URLScheme: String {
     case http
     case https
@@ -15,32 +17,47 @@ public enum URLScheme: String {
 //  https://jsonplaceholder.typicode.com/users
 
 public enum URLHost {
-    case live
-    case local
+    case production
+    case developement
     case staging
     
     var baseURL: String {
-       return "jsonplaceholder.typicode.com"
+        switch self {
+        case .developement:
+            return "dummy.restapiexample.com"
+        case .production:
+            return "jsonplaceholder.typicode.com"
+        case .staging:
+            return ""
+        }
     }
     
     var scheme: URLScheme {
         switch self {
-        case .local:
+        case .developement:
             return .http
-        case .live, .staging:
+        case .production, .staging:
             return .https
         
         }
     }
     
     var fixedPath: String {
-        return "/"
+        switch self {
+        case .developement:
+            return "/api/v1/"
+        case .staging, .production:
+            return "/"
+        }
+       
     }
 }
 
 public enum URLPath {
     case users
     case posts(Int)
+    case createEmployee
+    case getEmployees
     
     var endPoint: String {
         switch self {
@@ -48,16 +65,15 @@ public enum URLPath {
             return "users"
         case .posts:
             return "posts"
+        case .createEmployee:
+            return "create"
+        case .getEmployees:
+            return "employees"
         }
     }
     
     var queryItem: [URLQueryItem]? {
-        switch self {
-        case .users:
-            return nil
-        case .posts(let id):
-            return [URLQueryItem(name: "userId", value: String(id))]
-        }
+       return nil
     }
     
     
