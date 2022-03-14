@@ -11,6 +11,7 @@
 		5380DA2027DB742700D346F6 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380DA1F27DB742700D346F6 /* Employee.swift */; };
 		5380DA2327DB756300D346F6 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380DA2127DB756300D346F6 /* EmployeeCell.swift */; };
 		5380DA2427DB756300D346F6 /* EmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5380DA2227DB756300D346F6 /* EmployeeCell.xib */; };
+		53826C5027DF0D1A00950E0A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 53826C4F27DF0D1A00950E0A /* AlamofireImage */; };
 		934856CA27B280D600C116E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856C927B280D600C116E4 /* AppDelegate.swift */; };
 		934856CC27B280D600C116E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CB27B280D600C116E4 /* SceneDelegate.swift */; };
 		934856CE27B280D600C116E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934856CD27B280D600C116E4 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9348571027B28B8E00C116E4 /* Alamofire in Frameworks */,
+				53826C5027DF0D1A00950E0A /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +227,7 @@
 			name = ProjectStructureSample;
 			packageProductDependencies = (
 				9348570F27B28B8E00C116E4 /* Alamofire */,
+				53826C4F27DF0D1A00950E0A /* AlamofireImage */,
 			);
 			productName = ProjectStructureSample;
 			productReference = 934856C627B280D600C116E4 /* ProjectStructureSample.app */;
@@ -256,6 +259,7 @@
 			mainGroup = 934856BD27B280D600C116E4;
 			packageReferences = (
 				9348570E27B28B8E00C116E4 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				53826C4E27DF0D1A00950E0A /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 934856C727B280D600C116E4 /* Products */;
 			projectDirPath = "";
@@ -530,6 +534,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		53826C4E27DF0D1A00950E0A /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		9348570E27B28B8E00C116E4 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -541,6 +553,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		53826C4F27DF0D1A00950E0A /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53826C4E27DF0D1A00950E0A /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
 		9348570F27B28B8E00C116E4 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9348570E27B28B8E00C116E4 /* XCRemoteSwiftPackageReference "Alamofire" */;
