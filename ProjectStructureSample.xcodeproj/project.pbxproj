@@ -75,6 +75,7 @@
 			files = (
 				9348571027B28B8E00C116E4 /* Alamofire in Frameworks */,
 				5306307827D1E7C20059F0CD /* AlamofireImage in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
