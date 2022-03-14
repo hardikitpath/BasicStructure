@@ -7,8 +7,8 @@
 
 import Foundation
 
-public struct Response<A: Codable>: Codable {
-    var status: Int?
+ struct Response<A: Codable>: Codable {
+    var status: String?
     var message: String?
     var data: A?
 }
