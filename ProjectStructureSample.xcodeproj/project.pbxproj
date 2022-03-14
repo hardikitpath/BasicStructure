@@ -101,7 +101,7 @@
 				53826C5027DF0D1A00950E0A /* AlamofireImage in Frameworks */,
 
 				5306307827D1E7C20059F0CD /* AlamofireImage in Frameworks */,
- main
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
