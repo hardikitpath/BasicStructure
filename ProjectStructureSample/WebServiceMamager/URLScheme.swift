@@ -49,7 +49,6 @@ public enum URLHost {
         case .staging, .production:
             return "/"
         }
-       
     }
 }
 
