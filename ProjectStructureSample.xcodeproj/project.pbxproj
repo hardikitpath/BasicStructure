@@ -76,7 +76,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9348571027B28B8E00C116E4 /* Alamofire in Frameworks */,
-				1D73FA8F27E1B5B20088F9C6 /* AlamofireImage in Frameworks */,
+
+				5306307827D1E7C20059F0CD /* AlamofireImage in Frameworks */,
+
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
