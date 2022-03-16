@@ -24,21 +24,12 @@ class ViewController: UIViewController {
         self.tbl.rowHeight = UITableView.automaticDimension
         self.tbl.estimatedRowHeight = 80
         self.tbl.dataSource = self
-//        getUsers()
+
         getEmployee()
        
     }
 
-//    func getUsers()  {
-//        User.getUsers { result in
-//            switch result {
-//            case .success(let users):
-////                self.userDataSource = users
-//            case .failure(let error):
-//                print(error.title)
-//            }
-//        }
-//    }
+
     func getEmployee() {
         Employee.getEmployee { result in
             switch result {
