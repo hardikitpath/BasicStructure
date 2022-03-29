@@ -186,5 +186,25 @@ extension UIViewController {
     }
 }
 
+extension UIViewController {
+    
+    func topMostViewController() -> UIViewController {
+        
+        if let navController = self as? UINavigationController, let visibleViewController = navController.visibleViewController {
+            return visibleViewController.topMostViewController()
+        }
+        
+        if let tabbarController = self as? UITabBarController,
+           let selectedViewController = tabbarController.selectedViewController {
+            return selectedViewController.topMostViewController()
+        }
+        
+        if let presentedViewController = self.presentedViewController {
+            return presentedViewController.topMostViewController()
+        }
+        
+        return self
+    }
+}
 
 
